@@ -2,8 +2,7 @@
 
 This is a <a href="https://getbitbar.com">Bitbar</a> plugin that shows you if your <a href="https://plex.tv">Plex</A> installation is reachable.  It requires bash and curl and the IP/hostname of your Plex server.
 
-
-[Join the conversation with plugin authors and BitBar maintainers on Slack](https://getbitbar.herokuapp.com/)
+![BitBar Plex](https://res.cloudinary.com/cyberge/image/upload/v1550629945/screenshots/t7vta1o96coqvauyd7qh.png)
 
 ## Usage
 
