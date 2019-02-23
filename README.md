@@ -39,11 +39,11 @@ Update the values in the plugin as follows:
 
 Rename the plugin to adjust how frequently it refreshes.  I don't recommend setting too low of a refresh rate, but your usage may vary.  The default is 1 minute, hence the `.1m.` in the filename.
 
-The `pinghost` value is used to see if the Plex host server is up.  It is mostly used for laptops where networks can change.  The script won't attempt to curl the Plex identity if the host is unreachable.  This can be any pingable host on your network.
-The `plexhost` value is the hostname or IP address of your Plex server.
-The `plextoken` value is your Plex authentication token.  You can [see how to get it here](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/)
-The `serverid` value is your local Plex server's UUID.  You can find it in the address bar
-![serverid is in the address bar on a detail page](https://res.cloudinary.com/cyberge/image/upload/v1550936108/screenshots/h4ho4prvktfdjqdiod4q.png)
+- The `pinghost` value is used to see if the Plex host server is up.  It is mostly used for laptops where networks can change.  The script won't attempt to curl the Plex identity if the host is unreachable.  If your Plex server isn't pingable, this value can changed to any other pingable host on your network.
+- The `plexhost` value is the hostname or IP address of your Plex server.
+- The `plextoken` value is your Plex authentication token.  You can [see how to get it here](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/)
+- The `serverid` value is your local Plex server's UUID.  You can find it in the address bar.  In this example, it's `867c53098dc5feccea1cb108c18448cd6af92`:
+![serverid is in the address bar on a detail page](https://res.cloudinary.com/cyberge/image/upload/v1550937029/screenshots/zzo76okflobecdpfhmcu.png)
 
 ## Troubleshooting
 
