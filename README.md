@@ -37,16 +37,33 @@ Install into your Bitbar plugin directory.  Update the environment variables for
 
 Update the values in the plugin as follows:
 
-Rename the plugin to adjust how frequently it refreshes.  I don't recommend setting too low of a refresh rate, but your usage may vary.  The default is 5 minutes, hence the `.5m.` in the filename.
+Rename the plugin to adjust how frequently it refreshes.  I don't recommend setting too low of a refresh rate, but your usage may vary.  The default is 1 minute, hence the `.1m.` in the filename.
 
-The `pinghost` value is use in cases where you may have a VPN connection to the environment where the local Plex server lives.  The script won't attempt to curl the Plex identity if the host is unreachable.  This can be any pingable host on your network.
+The `pinghost` value is used to see if the Plex host server is up.  It is mostly used for laptops where networks can change.  The script won't attempt to curl the Plex identity if the host is unreachable.  This can be any pingable host on your network.
 The `plexhost` value is the hostname or IP address of your Plex server.
 The `plextoken` value is your Plex authentication token.  You can [see how to get it here](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/)
+The `serverid` value is your local Plex server's UUID.  You can find it in the address bar
+![serverid is in the address bar on a detail page](https://res.cloudinary.com/cyberge/image/upload/v1550936108/screenshots/h4ho4prvktfdjqdiod4q.png)
+
+## Troubleshooting
+
+If you have problems or bitbar doesn't respond, kill the BitBar.app process.  Find the process ID with:
+```
+$ ps aux | grep -i bitbar | egrep -v grep
+username         1993   0.0  0.2  5116184  35752   ??  S    Mon02PM   2:14.61 /Applications/BitBar.app/Contents/MacOS/BitBar
+```
+Now kill the process ID, in this case `1993`:
+```
+$ kill -9 1993
+```
+
+Move the plugins out of the plugin directory and restart Bitbar.  Replace the plugins back into the plugin directory until you find the one causing a problem.
 
 ## To Do
+- Add support for Music
+- Display currently playing Trailer
 - Clean up the code
-- Display currently playing if something is active or number of current sessions
-- Possibly rewrite in python
+- Possibly rewrite the code (python)
 
 ## Misc
 [Join the conversation with plugin authors and BitBar maintainers on Slack](https://getbitbar.herokuapp.com/)
