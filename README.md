@@ -27,7 +27,7 @@ On my Macbook, these files are:
 - /usr/bin/curl
 - /bin/ping
 ```
-Adjust these paths if necessary.
+Adjust these paths if necessary.  If you don't have these programs, you can install them using `brew`:  `brew install <app name>`.
 
 ## Usage
 
