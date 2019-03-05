@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # <bitbar.title>Plex Status</bitbar.title>
-# <bitbar.version>v0.3</bitbar.version>
+# <bitbar.version>v0.4</bitbar.version>
 # <bitbar.author>Chris Bergeron</bitbar.author>
 # <bitbar.author.github>chrisbergeron</bitbar.author.github>
 # <bitbar.desc>See what's currently playing on your Plex</bitbar.desc>
